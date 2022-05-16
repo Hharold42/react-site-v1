@@ -13,8 +13,7 @@
 }
 
 .navbar__logo {
-	color: white;
-	font-family: 'Courier New', Courier, monospace;
+	color: rgb(68,235,153);
 	font-size: 4.5rem;
 }
 
@@ -24,5 +23,36 @@
 }
 
 .navbar__item {
-	
+	white-space: nowrap;
+}
+
+.navbar__link {
+	text-decoration: none;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin: 0px 5px;
+	border-style: solid;
+	border-color: transparent;
+	transition: 250ms;
+}
+
+.navbar__link:hover {
+	border-color: white;
+}
+
+.navbar__menu {
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	.navbar__menu {
+		display: block;
+	}
+	.navbar__logo {
+		font-size: 2rem;
+	}
 }

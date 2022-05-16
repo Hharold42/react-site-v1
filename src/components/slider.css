@@ -31,3 +31,12 @@
 .slider__title {
 	text-align: center;
 }
+
+.slider__title a {
+	text-decoration: none;
+	color: black;
+}
+
+.slider__title a:hover {
+	color: rgb(68,235,153);
+}

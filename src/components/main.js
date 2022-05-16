@@ -4,7 +4,7 @@ import './main.css';
 const Hero = ({imageSrc}) => {
 	return (<div className="hero">
 		<img src={imageSrc} alt="Base" className="hero__image"/>
-		<h1 className="hero__title">Negimatzhanov Marat</h1>
+		<h1 className="hero__title">Front-end developer</h1>
 	</div>);
 };
 
