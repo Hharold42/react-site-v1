@@ -11,7 +11,7 @@
 .slider--zoom {
 	opacity: 1;
 	transform: scale(100%);
-	transition: 2s;
+	transition: 1.7s;
 }
 
 .slider__image {
@@ -39,4 +39,23 @@
 
 .slider__title a:hover {
 	color: rgb(68,235,153);
+}
+
+@media screen and (max-width: 940px){
+	.slider {
+		flex-direction: column;
+		background-color: aquamarine;
+	}
+	
+	.slider__image {
+		width: 100%;
+	}
+
+	.slider--zoom {
+		transition: 750ms;
+	}
+
+	.slider__title a:hover {
+		color: white;
+	}
 }
