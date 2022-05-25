@@ -22,7 +22,7 @@ const contents = [
 ]
 
 const texts = [
-	{title: 'Пишу фронэнд на JS и REACT', type: 'skills'},
+	{title: 'Пишу фронтэнд на JS и REACT', type: 'skills'},
 	{title: "Занимаюсь разработкой REST API на Django", type: 'skills'},
 	{title: 'Имею базовые знания SQL/PostgreSQL', type: 'skills'},
 	{title: 'Отлично работаю с Git', type: 'skills'},
