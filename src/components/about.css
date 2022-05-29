@@ -65,5 +65,8 @@
 	border-radius: 0;
 	flex: 1;
 	padding-top: 5px;
-	word-break: break-all;
+	-moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+	hyphens: auto;
 }

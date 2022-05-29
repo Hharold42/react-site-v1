@@ -7,6 +7,16 @@ import Hero from './components/main';
 import Slider from './components/slider';
 import Navbar from './components/navbar';
 import About from './components/about'
+import Links from './components/links';
+import {AiFillGithub, AiOutlinePhone} from 'react-icons/ai'
+import {BsTelegram} from 'react-icons/bs'
+
+const linksrc = [
+	{url: "https://github.com/Hharold42", title: "GitHub", type: "link", img: <AiFillGithub/>},
+	{url: "https://t.me/NegimatzhanovM", title: "Telegram", type: "link", img: <BsTelegram/>},
+	{url: "tel:+7-904-712-71-33", title: "+7-904-712-71-33", type: "number", img: <AiOutlinePhone/>},
+	
+]
 
 const navbarLinks = [
 	{url: '#', title: 'Home'},
@@ -23,7 +33,7 @@ const contents = [
 
 const texts = [
 	{title: 'Пишу фронтэнд на JS и REACT', type: 'skills'},
-	{title: "Занимаюсь разработкой REST API на Django", type: 'skills'},
+	{title: "Занимаюсь разработкой RESTful API на Django", type: 'skills'},
 	{title: 'Имею базовые знания SQL/PostgreSQL', type: 'skills'},
 	{title: 'Отлично работаю с Git', type: 'skills'},
 	{title: 'Готов изучать другие фреймворки и языки', type: 'skills'},
@@ -53,6 +63,10 @@ function App() {
 			textLinks={texts}
 			content = {contents}
 			id={"about"}
+		/>
+		<Links
+			linkSrc={linksrc}
+			id = {"links"}
 		/>
   </div>;
 }
