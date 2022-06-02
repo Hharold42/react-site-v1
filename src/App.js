@@ -1,6 +1,6 @@
 import './App.css';
-import me from './assets/me.jpg'
-import school from './assets/school.jpg'
+import me from './assets/me.png'
+import me2 from './assets/me2.png'
 import school_face from './assets/school_face.jpeg'
 import rpng from './assets/react.png'
 import Hero from './components/main';
@@ -10,6 +10,7 @@ import About from './components/about'
 import Links from './components/links';
 import {AiFillGithub, AiOutlinePhone} from 'react-icons/ai'
 import {BsTelegram} from 'react-icons/bs'
+
 
 const linksrc = [
 	{url: "https://github.com/Hharold42", title: "GitHub", type: "link", img: <AiFillGithub/>},
@@ -45,11 +46,11 @@ const texts = [
 function App() {
 	return <div className="App">
 		<Navbar navbarLinks={navbarLinks}/>
-	  	<Hero imageSrc={me} id={"hero"}/>
+	  	<Hero imageSrc1={me} imageSrc2={me2} id={"hero"}/>
 		<Slider 
 	  		imageSrc={rpng} 
 			title={"I am front-end React developer"}
-			subtitle={'I know:\nJS, TypeScript, React, HTML, CSS/less/sass'}
+			subtitle={'I know:\nJS, TypeScript, JSX, React, HTML, CSS/less/sass'}
 			flipped={true}
 		/>
 		<Slider 
